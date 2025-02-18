@@ -1,0 +1,99 @@
+:root {
+    --primary-color: #6a0dad;
+    --secondary-color: #d9a0eb;
+    --text-color-light: rgb(240, 240, 240);
+    --text-color-dark: #555;
+    --hover-color: #5a0099;
+    --footer-bg: #3e1f6e;
+    --footer-text-color: #f0cefa;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0cefa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garantiza que el cuerpo ocupe toda la altura de la ventana */
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    padding: 20px;
+    font-size: 24px;
+}
+
+main {
+    flex: 1; /* Esto asegura que el contenido ocupe el espacio restante */
+}
+
+.circles-container {
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+    margin-top: 6rem;
+    flex-wrap: wrap;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.circle:hover {
+    transform: scale(1.1);
+    background-color: var(--hover-color);
+}
+
+.circle-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle-description {
+    font-size: 16px;
+    color: var(--text-color-dark);
+    background-color: var(--secondary-color);
+    margin: 2rem 0rem;
+    padding: 2rem;
+    line-height: 1.4;
+    border-radius: 1rem;
+    max-width: 200px;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.circle-description h3 {
+    font-size: 1.6rem;
+    color: #141414;
+}
+
+.circle-description p {
+    font-size: 1.1rem;
+    color: #414141;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text-color);
+    padding: 1rem;
+    text-align: center;
+    font-size: 14px;
+}
