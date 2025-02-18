@@ -89,6 +89,27 @@ main {
     color: #414141;
 }
 
+button {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    border: none; /* Elimina el borde */
+    padding: 10px 20px; /* Añade algo de espacio alrededor del texto */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.6s, transform 0.6s; /* Suaviza la transición de color y escala */
+}
+
+button:hover {
+    background-color: var(--hover-color); /* Cambia de color al pasar por encima */
+    transform: scale(1.05); /* Hace que el botón crezca ligeramente */
+}
+
+a {
+    color: var(--text-color-light);
+    text-decoration: none; /* Quitar el subrayado del enlace del texto */
+}
+
 /* Footer styles */
 footer {
     background-color: var(--footer-bg);
